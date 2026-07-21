@@ -9,8 +9,8 @@ from aiogram.fsm.storage.memory import MemoryStorage
 
 from config import BOT_TOKEN
 from db import init_db
-from middlewares.anti_spam import AntiSpamMiddleware
-from middlewares.ban_check import BanCheckMiddleware
+from anti_spam import AntiSpamMiddleware
+from ban_check import BanCheckMiddleware
 from handlers import start, admin, application, support, messages
 
 logging.basicConfig(
